@@ -28,6 +28,14 @@
         </nav>
     </header>
 
+
+    <nav class="nav__mobile">
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Our team</a>
+        <a href="#" class="contact">Contact Us</a>
+    </nav>
+
     <section class="landing__page">
         <div class="container">
             <h1 class="title" data-aos="fade-left">We're an independent development agency.</h1>
@@ -107,7 +115,7 @@
             </div>
         </section>
 
-    </div>
+    </div> -->
     <div id="border">
         <section class="landing__page">
             <h2>OUR TEAM</h2>
@@ -188,7 +196,7 @@
         </section>
 
 
-    </div>
+    </div> 
 
     <div id="footer">
 
@@ -207,6 +215,17 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+
+ 
+    const menu_btn = document.querySelector('.humberger');
+    console.log(menu_btn)
+	const mobile_menu = document.querySelector('.nav__mobile');
+
+	menu_btn.addEventListener('click', function () {
+		menu_btn.classList.toggle('activeMobile');
+		mobile_menu.classList.toggle('activeMobile');
+
+	});
   </script>
 </body>
 
